@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption-Playground</title>
+    {% block stylesheet %}
+    <link rel=”stylesheet” href=”styles. css”>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Encryption Playground</h1>
+        <h3>Encrypt and decrypt messages using ciphers</h3>
+    </header>
+
+    <section>
+        <p>Cipher</p>
+        <select id="cipher-select">
+            <option value="caesar">Caesar</option>
+            <option value="vigenere">Vigenère</option>
+            <option value="xor">XOR</option>
+        </select>
+
+        <p>Key</p>
+        <input type="text" id="key-input" placeholder="Enter key eg. 7 for Caesar, string for others"/>
+
+        <p>Plaintext</p>
+        <textarea id="plaintext" placeholder="Type your message here..."></textarea>
+        <p>Ciphertext</p>
+        <textarea id="ciphertext" placeholder="Output will appear here..." readonly></textarea>
+    </section>
+
+    <section>
+        <h4>About this cipher</h4>
+        
+    </section>
+    
+    
+</body>
+</html>
