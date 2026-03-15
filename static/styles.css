@@ -13,7 +13,19 @@ p {
     color: #e0daea;
 }
 
-h1, h3 {
+h1{
+    color: #e0daea;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #e0daea;
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 1.1em;
+}
+
+h4 {
     color: #e0daea;
 }
 
@@ -31,16 +43,33 @@ h1, h3 {
     padding: 10px;
 }
 
+.cipher-grid div:nth-child(1),
+.cipher-grid div:nth-child(2) {
+    border-bottom: 1px solid rgba(224, 218, 234, 0.5);
+    padding-bottom: 30px;
+}
+
+.cipher-grid div p {
+    text-align: left;
+    width: 100%; 
+    margin-bottom: 0px;
+    font-size: 1.1em;
+}
+
+.title {
+    text-align: left;
+}
+
 section {
     background-color: #16213e;
     border: 1px solid #e0daea;
     border-radius: 15px;
-    margin: 1em 5em;
+    margin: 1em 10em;
 }
 
 header {
     text-align: left;
-    margin: 3em 5em 1em 5em;
+    margin: 3em 10em 1em 10em;
 }
 
 select, input, textarea {
@@ -50,9 +79,13 @@ select, input, textarea {
     background-color: #0f3460;
     border: 1px solid #3a3a6a;
     color: #e0e0ff;
+    font-family: "Approach", sans-serif;
+    box-sizing: border-box;
 }
 
 textarea {
-    resize: none;
+    resize: none;   
+    height: 150px;         
+    box-sizing: border-box; 
 }
 
