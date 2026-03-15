@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Approach";
+    src: url("/static/approach.otf") format("opentype");
+}
+
+body {
+    background-color: #1a1a2e;
+    text-align: center;
+    font-family: "Approach", sans-serif;
+}
+
+p {
+    color: #e0daea;
+}
+
+h1, h3 {
+    color: #e0daea;
+}
+
+.cipher-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 20px;
+}
+
+.cipher-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+section {
+    background-color: #16213e;
+    border: 1px solid #e0daea;
+    border-radius: 15px;
+    margin: 1em 5em;
+}
+
+header {
+    text-align: left;
+    margin: 3em 5em 1em 5em;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #0f3460;
+    border: 1px solid #3a3a6a;
+    color: #e0e0ff;
+}
+
+textarea {
+    resize: none;
+}
+
