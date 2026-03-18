@@ -44,7 +44,9 @@ h4 {
 }
 
 .cipher-grid div:nth-child(1),
-.cipher-grid div:nth-child(2) {
+.cipher-grid div:nth-child(2),
+.cipher-grid div:nth-child(3),
+.cipher-grid div:nth-child(4) {
     border-bottom: 1px solid rgba(224, 218, 234, 0.5);
     padding-bottom: 30px;
 }
@@ -89,3 +91,34 @@ textarea {
     box-sizing: border-box; 
 }
 
+#encrypt {
+    margin-top: 1.3em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    border: none;
+    color: white;
+    font-family: "Approach", sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+#encrypt:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.3);
+    cursor: pointer;
+}
+
+.buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #4c1d95;
+    box-shadow: 0 0 0 2px rgba(155, 93, 229, 0.2);
+}
