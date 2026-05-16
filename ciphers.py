@@ -69,10 +69,4 @@ def XOR_cipher(plaintext, key):
         completionCounter += 1
     return result
 
-# print(caesar_cipher("secret Message from Above! Stay safe everyONE.", 7))
-# print(vigenere_cipher("secret Message from Above! Stay safe everyONE.", "key"))
-# print(XOR_cipher("Fiber Optic cable! lot of mOney in this stuff.", "ab"))
 
-encrypted = XOR_cipher("hello world", "ab")
-decrypted = XOR_cipher(encrypted, "ab")
-print(decrypted)

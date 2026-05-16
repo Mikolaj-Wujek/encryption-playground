@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">            
     
 </head>
+
 <body>
     <header>
         <h1>Encryption Playground</h1>
@@ -49,6 +50,21 @@
         
     </section>
     
-    
+<script>
+    document.getElementById('encrypt').addEventListener('click', async () => {
+        const cipher = document.getElementById('cipher-select').value;
+        const key = document.getElementById('key-input').value;
+        const plaintext = document.getElementById('plaintext').value;
+
+        const response = await fetch('/encrypt', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ cipher, key, plaintext })
+        });
+
+        const data = await response.json();
+        document.getElementById('ciphertext').value = data.ciphertext ?? `Error: ${data.error}`;
+    });
+</script>    
 </body>
 </html>
